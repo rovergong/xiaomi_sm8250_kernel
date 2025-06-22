@@ -68,5 +68,5 @@ umi-ksu-Anykernel3.zip
 ##### 内核版本+构建时间+编译用户+随机编码
 4.19.325-20250621-clcwpwqi-z9m7c3d3
 > 小米10内核，由clcwpwqi于2025年2月27日编译
-##### 其他
+#### 其他
 - 此项目中提到的“ksu”均指KernelSU的分支[SukiSU Ultra](https://github.com/SukiSU-Ultra/SukiSU-Ultra)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)与[适用于SukiSU Ultra的KPM](https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch)支持
