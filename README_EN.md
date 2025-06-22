@@ -25,7 +25,7 @@ Automatically build kernels with SukiSU-Ultra SUSFS KPM or KernelSU-Next SUSFS s
 - CANBus and USBCAN adapter support  
 - zRAM with LZ4, LZ4HC, ZSTD compression algorithms  
 - Other n0kernel features  
-- Additional features from [liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)  
+- Other liyafe1997 kernel features
 
 ### Installation Guide  
 1. Download the appropriate kernel package from [Releases](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/releases) or fork and build yourself  
