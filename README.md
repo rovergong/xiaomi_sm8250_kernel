@@ -59,6 +59,11 @@
 |          小米10           |  umi   |
 |         红米K40S          | munch  |
 |        红米K30 Pro        |  lmi   |
+### 自行构建指南
+1. Fork本仓库
+2. 进入Action页面
+3. 选择构建模板，按提示输入
+4. 构建完成后下载刷入
 ### 名称解读
 #### 附件名称
 ##### 设备代号+内核特性+文件类型.zip
@@ -68,5 +73,9 @@ umi-ksu-Anykernel3.zip
 ##### 内核版本+构建时间+编译用户+随机编码
 4.19.325-20250621-clcwpwqi-z9m7c3d3
 > 小米10内核，由clcwpwqi于2025年2月27日编译
+#### Action构建模板名称
+- build_n0kernel.yml 基于n0kernel的内核源码构建
+- build_liyafe1997.yml 基于liyafe1997的内核源码构建
+＞ 没有基于官方代码构建的模板是因为官方内核源码老旧，难以在安卓高版本上运行，且功能少，bug多
 #### 其他
 - 此项目中提到的“ksu”均指KernelSU的分支[SukiSU Ultra](https://github.com/SukiSU-Ultra/SukiSU-Ultra)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)与[适用于SukiSU Ultra的KPM](https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch)支持
