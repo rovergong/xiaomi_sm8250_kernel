@@ -1,5 +1,5 @@
 # 小米 SM8250 机型内核自动构建
-利用GitHub Action自动构建带SukiSU Ultra SUSFS KPM 支持的内核，源码基于[n0kernel](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
+利用GitHub Action自动构建带SukiSU-Ultra SUSFS KPM或KernelSU-Next SUSFS支持的内核，源码基于[n0kernel](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
 
 **[中文](README.md) [English](README_EN.md)**
 
@@ -13,7 +13,8 @@
 - 源码基于[n0kernel(仅小米10/Pro)](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997(所有SM8250机型)](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
 
 ### 内核特性
-- SukiSU Ultra SUSFS KPM 支持
+- SukiSU-Ultra SUSFS KPM 支持 (可选)
+- KernelSU-Next SUSFS 支持。 (可选)
 - 完整LTO构建
 - 快充优化
 - 支持HBM和DC调光
@@ -68,7 +69,7 @@
 #### 附件名称
 ##### 设备代号+内核特性+文件类型.zip
 umi-ksu-Anykernel3.zip
-> 小米10内核，包含SukiSU Ultra,KPM与SUSFS支持，AnyKernel3卡刷包
+> 小米10内核，包含SukiSU-Ultra SUSFS KPM或KernelSU-Next SUSFS(取决于你的选择)，AnyKernel3卡刷包
 #### 内核名称
 ##### 内核版本+构建时间+编译用户+随机编码
 4.19.325-20250621-clcwpwqi-z9m7c3d3
@@ -78,4 +79,4 @@ umi-ksu-Anykernel3.zip
 - build_liyafe1997.yml 基于liyafe1997的内核源码构建
 > 没有基于官方代码构建的模板是因为官方内核源码老旧，难以在安卓高版本上运行，且功能少，bug多
 #### 其他
-- 此项目中提到的“ksu”均指KernelSU的分支[SukiSU Ultra](https://github.com/SukiSU-Ultra/SukiSU-Ultra)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)与[适用于SukiSU Ultra的KPM](https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch)支持
+- 此项目中提到的“ksu”指[KernelSU](https://github.com/tiann/KernelSU)的分支[SukiSU-Ultra](https://github.com/SukiSU-Ultra/SukiSU-Ultra)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)与[适用于SukiSU-Ultra的KPM](https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch)支持，或[KernelSU](https://github.com/tiann/KernelSU)的分支[KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)支持
