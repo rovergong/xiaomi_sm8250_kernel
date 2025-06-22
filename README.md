@@ -1,2 +1,72 @@
-# xiaomi_sm8250_kernel
-自动构建带SukiSU Ultra SUSFS 与 KPM 支持的内核
+# 小米 SM8250 机型内核自动构建
+利用GitHub Action自动构建带SukiSU Ultra SUSFS 与 KPM 支持的内核，源码基于[n0kernel](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
+
+**[中文](README.md) [English](README_EN.md)**
+
+> [!WARNING]
+>刷入前请确认手机已经解锁Bootloader，请确保您的设备适合刷入此内核，并检查设备代号符合您所下载的内核卡刷包，并且已经备份原boot！
+
+### 内核信息
+- 适用于骁龙865/870的小米手机
+- 适用于安卓11-15的MIUI/HyperOS (*AOSP即将支持*)
+- 内核为 AnyKernel3 卡刷包
+- 源码基于[n0kernel(仅小米10/Pro)](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997(所有SM8250机型)](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
+
+### 内核特性
+- SukiSU Ultra SUSFS KPM支持
+- 完整LTO构建
+- 快充优化
+- 支持 HBM 和 DC 调光
+- KCAL 色彩校准
+- 支持USB串口驱动（CH340/FTDI/PL2303/OTI6858/TI/SPCP8X5/QT2/UPD78F0730/CP210X）
+- 支持EROFS
+- F2FS开启了realtime discard以更好的TRIM闪存
+- 支持 CANBus 和 USB CAN 适配器
+- zRAM 支持 LZ4、LZ4HC、ZSTD 压缩算法
+- 其它n0kernel的内核特性
+- 其他[liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)的内核特性
+
+### 刷入指南
+1. 从[发布页](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/releases)下载适用于您机型的内核卡刷包，或Fork后自行编译
+2. 备份boot
+3. 使用twrp等第三方rec刷入，刷入前会检测设备代号及ROM信息
+> 如果提示没有适合您设备的内核，或设备代号检查不通过，请检查设备型号，设备ROM及卡刷包信息
+4. 若开机则正常使用，不开机刷回原boot即可开机
+> 若开机后黑屏，请刷基于liyafe1997源码构建的内核，或检查是否使用了不符合系统版本的内核
+### 机型对照
+
+- **n0kernel 支持**
+
+| 机型名称    | 设备代号 |
+| ------- | ---- |
+| 小米10    | umi  |
+| 小米10Pro | cmi  |
+
+- **liyafe1997 内核支持**
+
+|          设备名称           |  设备代号  |
+| :---------------------: | :----: |
+|          小米平板6          |  pipa  |
+|     小米平板5 Pro 12.4      |  dagu  |
+|      小米平板5 Pro 5G       | enuma  |
+|        小米平板5 Pro        | elish  |
+|          小米12X          | psyche |
+| 小米11X / POCO F3 / 红米K40 | alioth |
+|  小米10T / 红米K30S Ultra   | apollo |
+|          小米10S          | thyme  |
+|       小米10 Ultra        |  cas   |
+|        小米10 Pro         |  cmi   |
+|          小米10           |  umi   |
+|         红米K40S          | munch  |
+|        红米K30 Pro        |  lmi   |
+### 名称解读
+#### 附件名称
+- 设备代号+内核特性+文件类型.zip
+
+umi-ksu-Anykernel3.zip
+> 小米10 内核包含SukiSU Ultra,KPM与SUSFS支持，AnyKernel3卡刷包
+#### 内核名称
+- 内核版本+构建时间+编译用户+随机编码
+
+4.19.325-20250621-CLC-z9m7c3d3
+> 小米10 内核包含 SukiSU Ultra,KPM 与 SUSFS 2025年2月27日编译
