@@ -76,6 +76,6 @@ umi-ksu-Anykernel3.zip
 #### Action构建模板名称
 - build_n0kernel.yml 基于n0kernel的内核源码构建
 - build_liyafe1997.yml 基于liyafe1997的内核源码构建
-＞ 没有基于官方代码构建的模板是因为官方内核源码老旧，难以在安卓高版本上运行，且功能少，bug多
+> 没有基于官方代码构建的模板是因为官方内核源码老旧，难以在安卓高版本上运行，且功能少，bug多
 #### 其他
 - 此项目中提到的“ksu”均指KernelSU的分支[SukiSU Ultra](https://github.com/SukiSU-Ultra/SukiSU-Ultra)并添加[SUSFS](https://gitlab.com/simonpunk/susfs4ksu)与[适用于SukiSU Ultra的KPM](https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch)支持
