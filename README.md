@@ -4,13 +4,13 @@
 **[中文](README.md) [English](README_EN.md)**
 
 > [!WARNING]
->刷入前请确认手机已经解锁Bootloader，请确保您的设备适合刷入此内核，并检查设备代号与系统版本均符合您所下载的内核卡刷包，并且已经备份原boot与手机基带等内容！
+>刷入前请确认手机已经解锁Bootloader，已经备份原boot与手机基带等内容。请确保您的设备适合刷入此内核，并检查设备代号与系统版本均符合您所下载的内核卡刷包！
 
 ### 内核信息
 - 适用于骁龙865/870的小米设备
 - 适用于安卓11-15的MIUI/HyperOS (*AOSP即将支持*)
 - 内核为AnyKernel3卡刷包
-- 源码基于[n0kernel(仅小米10/Pro)](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997(所有SM8250机型)](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
+- 内核源码基于[n0kernel(仅小米10/Pro)](https://github.com/jhchong94/kernel_xiaomi_sm8250_n0kernel)和[liyafe1997(所有SM8250机型)](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)
 
 ### 内核特性
 - SukiSU-Ultra SUSFS KPM 支持 (可选)
@@ -29,11 +29,11 @@
 
 ### 刷入指南
 1. 从[发布页](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/releases)下载适用于您机型的内核卡刷包，或Fork后自行编译
-2. 备份boot
-3. 使用第三方Recovery(如TWRP)或Kernel Flash App等方式刷入，刷入前会检查设备代号(n0kernel)和ROM信息
+2. 备份Boot分区
+3. 使用第三方Recovery(如TWRP)或Kernel Flash App等方式刷入，刷入前会检查设备代号(n0kernel)和系统版本
 > 如果提示没有适合您设备的内核，请检查设备代号、系统版本是否与内核相匹配
-4. 若开机则正常使用，不开机刷回原boot即可开机
-> 若开机后黑屏，请刷基于liyafe1997源码构建的内核，或检查是否使用了不符合系统版本的内核
+4. 若开机则正常使用，不开机刷回原boot即可
+> 若开机后黑屏，请刷入基于liyafe1997源码构建的内核，或检查是否使用了不符合系统版本的内核
 ### 机型对照
 
 - **n0kernel 支持**
@@ -61,7 +61,7 @@
 |         红米K40S          | munch  |
 |        红米K30 Pro        |  lmi   |
 ### 自行构建指南
-1. [Fork本仓库](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/fork)到你自己的账号
+1. [创建本仓库分支](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/fork)到你自己的账号
 2. 进入Action页面
 3. 选择构建模板，按提示输入
 4. 构建完成后下载刷入
