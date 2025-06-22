@@ -25,7 +25,7 @@
 - 支持CANBus和USBCAN适配器
 - zRAM支持LZ4、LZ4HC、ZSTD压缩算法
 - 其它n0kernel的内核特性
-- 其他[liyafe1997](https://github.com/liyafe1997/kernel_xiaomi_sm8250_mod)的内核特性
+- 其他liyafe1997的内核特性
 
 ### 刷入指南
 1. 从[发布页](https://github.com/clcwpwqi/xiaomi_sm8250_kernel/releases)下载适用于您机型的内核卡刷包，或Fork后自行编译
