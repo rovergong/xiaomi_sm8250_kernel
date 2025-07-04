@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir $GITHUB_WORKSPACE/kernel_workspace
           cd $GITHUB_WORKSPACE/kernel_workspace
-          git clone https://github.com/clcwpwqi/kernel_865_mod -b android15-lineage22-mod --depth=1 android_kernel
+          git clone https://github.com/XEKZHX/android_kernel_xiaomi_sm8250-open -b a16_debug --depth=1 android_kernel
           cd android_kernel
           bash build-action.sh ${{ inputs.phonea }} ${{ inputs.roota}}
 
