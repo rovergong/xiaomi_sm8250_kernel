@@ -51,7 +51,7 @@ jobs:
       - name: 3.添加KernelSU Next
         run: |
           cd $GITHUB_WORKSPACE/kernel_workspace/android_kernel
-          curl -LSs "https://raw.bgithub.xyz/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s next
+          curl -LSs "https://raw.github.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s next
 
       - name: 4.修补KernelSU Next
         run: |
