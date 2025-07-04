@@ -44,14 +44,14 @@ jobs:
       - name: 2.拉取源码与补丁
         run: |
           cd $GITHUB_WORKSPACE/kernel_workspace
-          git clone https://github.com/clcwpwqi/kernel_xiaomi_sm8250_n0kernel --depth=1 android_kernel
+          git clone https://github.com/XEKZHX/android_kernel_xiaomi_sm8250-open --depth=1 android_kernel
           git clone https://github.com/clcwpwqi/kernel.git src
           git clone https://gitlab.com/simonpunk/susfs4ksu.git -b kernel-4.19 --depth=1 susfs
 
       - name: 3.添加KernelSU Next
         run: |
           cd $GITHUB_WORKSPACE/kernel_workspace/android_kernel
-          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s next
+          curl -LSs "https://raw.bgithub.xyz/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s next
 
       - name: 4.修补KernelSU Next
         run: |
